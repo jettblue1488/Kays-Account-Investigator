@@ -1,7 +1,4 @@
-plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-}
+plugins { id("com.android.application") }
 android {
     namespace = "com.kays.accountinvestigator"
     compileSdk = 35
@@ -12,6 +9,8 @@ android {
         versionCode = 1
         versionName = "0.1"
     }
-    compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
-    kotlinOptions { jvmTarget = "17" }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
 }
